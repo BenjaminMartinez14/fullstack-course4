@@ -1,0 +1,82 @@
+/* Estilos base */
+body {
+    font-family: Arial, sans-serif; /* Opcional: cambia la familia de fuentes según prefieras */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    float: left;
+    position: relative;
+}
+
+section h2 {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    border: 1px solid black;
+}
+
+/* Colores y más estilos específicos para secciones */
+/* Reemplaza los colores según tus preferencias */
+section#chicken {
+    background-color: #fdd;
+    color: #000;
+}
+
+section#chicken h2 {
+    background-color: #f99;
+}
+
+section#beef {
+    background-color: #dfd;
+    color: #000;
+}
+
+section#beef h2 {
+    background-color: #9f9;
+}
+
+section#sushi {
+    background-color: #ddf;
+    color: #000;
+}
+
+section#sushi h2 {
+    background-color: #99f;
+}
+
+/* Diseño responsivo */
+/* Mobile */
+@media (max-width: 767px) {
+    section {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    section {
+        width: 48%; /* Ajusta para el margen */
+    }
+    section:last-child {
+        width: 100%;
+        clear: both;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    section {
+        width: 31.333%; /* Ajusta para el margen */
+    }
+}
